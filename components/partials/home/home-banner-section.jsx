@@ -1,5 +1,6 @@
 import React from "react";
 import Script from 'next/script'
+import ALink from "../../common/ALink";
 
 
 function BannerSection() {
@@ -210,12 +211,12 @@ function BannerSection() {
                                 <h2 className="text-color-light font-weight-bold custom-positive-ls-5px mb-0">Norite isigyti įrangos ?</h2>
                             </div>
                             <div className="col-lg-3 text-lg-end">
-                                <a href="demo-industry-factory-contact.html" className="btn custom-svg-btn-style-1 custom-svg-btn-style-1-light text-color-light text-color-hover-dark">
+                                <ALink href="/shop" className="btn custom-svg-btn-style-1 custom-svg-btn-style-1-light text-color-light text-color-hover-dark">
                                     <svg className="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70" preserveAspectRatio="none">
                                         <polygon fill="transparent" stroke="#FFF" strokeWidth="2" strokeMiterlimit="10" points="7,5 185,5 205,34 186,63 7,63 " />
                                     </svg>
                                     Mūsų E. Parduotuvė
-                                </a>
+                                </ALink>
                             </div>
                         </div>
                     </div>
@@ -356,10 +357,10 @@ function BannerSection() {
                                             <h3 className="text-transform-none font-weight-bold custom-font-size-1 mb-3">Adresas</h3>
                                             <div className="d-flex flex-column flex-md-row">
                                                 <ul className="list list-unstyled pe-5 mb-md-0">
-                                                    <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}><strong className="text-color-dark custom-font-size-3">Buveinė:</strong></li>
-                                                    <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}>Vėjo g. 147</li>
-                                                    <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}>Klaipėda</li>
-                                                    <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}>LT-92348</li>
+                                                    <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}><strong className="text-color-dark custom-font-size-3">Buveinė:</strong></li>
+                                                    <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}>Vėjo g. 147</li>
+                                                    <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}>Klaipėda</li>
+                                                    <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}>LT-92348</li>
                                                 </ul>
 
                                             </div>
@@ -376,8 +377,8 @@ function BannerSection() {
                                         <div className="feature-box-info">
                                             <h3 className="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2">El. paštas:</h3>
                                             <ul className="list list-unstyled pe-5 mb-0">
-                                                <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}><a href="mailto:email@domain.com" className="text-color-default text-color-hover-primary text-decoration-none">info@klojiniaipastoliai.lt</a></li>
-                                                <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}><a href="mailto:email@domain.com" className="text-color-default text-color-hover-primary text-decoration-none">simisuab@gmail.com</a></li>
+                                                <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}><a href="mailto:email@domain.com" className="text-color-default text-color-hover-primary text-decoration-none">info@klojiniaipastoliai.lt</a></li>
+                                                <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}><a href="mailto:email@domain.com" className="text-color-default text-color-hover-primary text-decoration-none">simisuab@gmail.com</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -392,8 +393,8 @@ function BannerSection() {
                                         <div className="feature-box-info">
                                             <h3 className="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2">Telefonas:</h3>
                                             <ul className="list list-unstyled pe-5 mb-0">
-                                                <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}><a href="tel:+1234567890" className="text-color-default text-color-hover-primary text-decoration-none">+370 618 85150</a></li>
-                                                <li className="mb-0" style={{padding:'0', lineHeight:'24px', border:'0'}}><a href="tel:+1234567890" className="text-color-default text-color-hover-primary text-decoration-none">+370 607 22237</a></li>
+                                                <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}><a href="tel:+1234567890" className="text-color-default text-color-hover-primary text-decoration-none">+370 618 85150</a></li>
+                                                <li className="mb-0" style={{ padding: '0', lineHeight: '24px', border: '0' }}><a href="tel:+1234567890" className="text-color-default text-color-hover-primary text-decoration-none">+370 607 22237</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -413,18 +414,18 @@ function BannerSection() {
                                 </div>
 
                                 <div className="row">
-                                    <div className="form-group col">
-                                        <input type="text" defaultValue="" data-msg-required="Please enter your name." maxLength="100" className="form-control py-2" name="name" placeholder="Jūsų Vardas" required />
+                                    <div className="form-group col" style={{ marginBottom: '25px' }}>
+                                        <input type="text" style={{ fontSize: '14px' }} defaultValue="" data-msg-required="Please enter your name." maxLength="100" className="form-control py-2" name="name" placeholder="Jūsų Vardas" required />
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="form-group col">
-                                        <input type="email" defaultValue="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxLength="100" className="form-control py-4 block" name="email" placeholder="EL. paštas" required />
+                                    <div className="form-group col" style={{ marginBottom: '25px' }}>
+                                        <input type="email" style={{ fontSize: '14px' }} defaultValue="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxLength="100" className="form-control py-4 block" name="email" placeholder="EL. paštas" required />
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="form-group col">
-                                        <textarea maxLength="5000" data-msg-required="Please enter your message." rows="6" className="form-control" name="message" placeholder="Jūsų žinutė" required></textarea>
+                                    <div className="form-group col" style={{ marginBottom: '25px' }}>
+                                        <textarea maxLength="5000" style={{ fontSize: '14px', color: '#777' }} data-msg-required="Please enter your message." rows="6" className="form-control" name="message" placeholder="Jūsų žinutė" required></textarea>
                                     </div>
                                 </div>
                                 <div className="row">
