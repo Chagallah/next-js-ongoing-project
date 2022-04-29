@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Script from 'next/script'
 import ALink from "../../common/ALink";
 
 
 function BannerSection() {
+    useEffect(() => {
+        // <Script src="js/theme.init.js" strategy="afterInteractive " />
+        const script = document.createElement("script");
+        Script.src = "js/theme.init.js";
+        Script.async = true;
+        document.body.appendChild(script);
+    }, []);
     return (
         <div className="body header-topspace">
 
@@ -36,6 +43,7 @@ function BannerSection() {
                                         </h2>
                                     </div>
                                     <p className="custom-font-size-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Siūlome savo klientams profesionalų vertinamą, itin aukštos kokybės, statybinės įrangos produkciją</p>
+                                   
                                     <a href="" className="btn custom-svg-btn-style-1 text-color-hover-primary mb-sm-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                                         <svg className="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70" preserveAspectRatio="none">
                                             <polygon fill="none" stroke="#D4D4D4" strokeWidth="2" strokeMiterlimit="10" points="7,5 185,5 205,34 186,63 7,63 " />
@@ -193,12 +201,12 @@ function BannerSection() {
                                     <li className="font-weight-semibold text-color-dark"><i className="fas fa-check text-color-dark border-color-grey-1 top-7"></i> Pagreitinsite projekto įgivendinimą</li>
                                     <li className="font-weight-semibold text-color-dark"><i className="fas fa-check text-color-dark border-color-grey-1 top-7"></i> Trumpinkite tiekimo grandinę</li>
                                 </ul>
-                                <a href="demo-industry-factory-services-detail.html" className="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0">
+                                <ALink href="/" className="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0">
                                     Skaičiuoti Pastolius
                                     <svg className="ms-2" version="1.1" viewBox="0 0 15.698 8.706" width="17" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                         <polygon stroke="#FFF" strokeWidth="0.1" fill="#FFF" points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 " />
                                     </svg>
-                                </a>
+                                </ALink>
                             </div>
                         </div>
                     </div>

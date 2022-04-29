@@ -84,8 +84,9 @@ export default function NewsletterModal() {
         <form action="#">
           <div className="input-group">
             <input
+              style={{ fontSize:'16px', border:'none', borderRadius:'3rem 0 0 3rem !important' }}
               type="email"
-              className="form-control"
+              className="form-control inputRadius"
               id="newsletter-email"
               name="newsletter-email"
               placeholder="Your email address"

@@ -6,12 +6,6 @@ import qs from "qs";
 import Head from "next/head";
 
 export default function Index({ data, loading, seo }) {
-  const featured = !loading && data.specialProducts.featured;
-  const bestSelling = !loading && data.specialProducts.bestSelling;
-  const latest = !loading && data.specialProducts.latest;
-  const topRated = !loading && data.specialProducts.topRated;
-  const onSale = !loading && data.specialProducts.onSale;
-  const product = !loading && data.products.data;
 
   return (
     <>

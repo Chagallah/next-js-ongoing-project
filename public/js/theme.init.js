@@ -2,7 +2,7 @@
 (function($) {
 
 	'use strict';
-
+	const theme = window.theme
 	// Scroll to Top Button.
 	if (typeof theme.PluginScrollToTop !== 'undefined') {
 		theme.PluginScrollToTop.initialize();
